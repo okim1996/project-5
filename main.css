@@ -1,0 +1,102 @@
+input {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.true img {
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+.false img {
+    display: none;
+}
+
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    width: auto;
+    margin: auto;
+    /* Image border */
+    border: 4px solid white;
+  }
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: center;
+    line-height: 1.1em;
+  }
+
+.lb-data .lb-caption {
+font-size: 16px;
+font-weight: bold;
+line-height: 1em;
+word-wrap: break-word;
+}
+
+@media (min-width:768px) {
+
+    input {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        margin-bottom: 10%;
+    }
+
+    .true img {
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+        width: 40%;
+        margin-bottom: 10%;
+    
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    input {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .true img {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        float: left;
+        width: 20%;
+        margin-bottom: 10%;
+    
+    }
+
+    .lb-data .lb-caption {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1em;
+      }
+
+}
+
+/*  
+***************Float Clearfix
+  */
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Credit for the lightbox plugin goes to Lokesh Dhakar at:
+https://lokeshdhakar.com/projects/lightbox2/
+The MIT License */
